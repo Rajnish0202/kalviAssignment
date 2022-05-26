@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300;8..144,400;8..144,500;8..144,600;8..144,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  list-style: none;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+  background: #fff;
+}
+
+.center {
+  text-align: center !important;
+}
+
+.extra_margin {
+  margin-bottom: 2rem !important;
+}
+
+header {
+  width: 100%;
+  background: transparent;
+  padding: 2rem 7rem;
+  position: relative;
+}
+
+section {
+  padding: 2rem 7rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+nav ul li {
+  margin: 0 2.5rem;
+}
+
+nav ul li a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.85px;
+}
+
+/* About Section */
+
+.about {
+  width: 100%;
+}
+
+.about .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.name {
+  padding: 0.5rem 0;
+  font-size: 30px;
+  text-transform: capitalize;
+  color: #000;
+}
+
+.text {
+  text-align: start;
+  font-size: 14px;
+  line-height: 1.4;
+  letter-spacing: 0.85px;
+}
+
+.about .container .btn {
+  margin: 1rem 0;
+  padding: 10px 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  background: #99cc00;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+.about .container .right .image {
+  width: 350px;
+  border-radius: 5px;
+}
+
+.about .container .right .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about .container .right .image::after {
+  content: "";
+  position: absolute;
+  background: #99cc00;
+  width: 350px;
+  height: 25rem;
+  top: 0;
+  left: 810px;
+  z-index: -1;
+}
+
+/* Eduction section */
+
+.eduction {
+  width: 100%;
+}
+
+.eduction .eduction_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  width: 80%;
+}
+
+.eduction .eduction_container .eduction_heading::after {
+  content: "";
+  position: absolute;
+  background-image: url(./assets/bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: -100px;
+  width: 250px;
+  z-index: -1;
+  height: 200px;
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: capitalize;
+  padding: 10px 0;
+  color: #000;
+}
+
+.eduction .eduction_container .eduction_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.eduction .eduction_container .eduction_content .year {
+  padding: 0.5rem 0;
+  color: #99cc00;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+
+.eduction .eduction_container .eduction_content h5 {
+  padding: 0.5rem 0;
+  color: #000;
+  font-size: 18px;
+  letter-spacing: 0.85px;
+}
+
+.eduction .eduction_container .eduction_content .info {
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.85px;
+  color: #000;
+}
+
+/* Achievements section */
+
+.achievement {
+  width: 100%;
+}
+
+.achievement_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  place-items: center;
+}
+
+.achievement_container .achievement_content .image {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+
+.achievement_container .achievement_content .image::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  background: #99cc00;
+  top: -5px;
+  left: 20px;
+  z-index: 2;
+}
+
+.achievement_container .achievement_content .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.title {
+  padding: 5px 0;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.85px;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.desc {
+  padding: 5px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+.achievement a {
+  color: #99cc00;
+  text-transform: capitalize;
+  padding: 10px 0;
+  letter-spacing: 1px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.achievement_field {
+  margin: 2rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.achievement_field .achievement_descp {
+  max-width: 600px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 250px;
+  padding: 10px;
+}
+
+.upperline {
+  width: 30px;
+  height: 5px;
+  margin: 3px 0;
+  background: #99cc00;
+}
+
+.proud::after {
+  background: #99cc00;
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 350px;
+  top: 0;
+  z-index: -1;
+  right: -110px;
+}
+
+.proud_text {
+  color: #fff;
+}
+
+/* Hobbies Section */
+
+.hobbies {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hobby_title {
+  color: #99cc00;
+}
+
+.hobby_info {
+  font-size: 14px;
+  width: 60%;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.hobbies_image {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: "one two" "one three" "four five";
+  column-gap: 0.5rem;
+}
+
+.hobbies_image .image {
+  width: 200px;
+}
+
+.hobbies_image .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.img1 {
+  grid-area: one;
+}
+.img2 {
+  grid-area: two;
+}
+.img3 {
+  grid-area: three;
+}
+.img4 {
+  grid-area: four;
+}
+.img5 {
+  grid-area: five;
+}
+
+/* Contact Section */
+
+.contact {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.contact_container::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 200px;
+  background: #99cc00;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.contact_color {
+  color: #fff;
+}
+
+.mail {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.contact .contact_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.contact .contact_icons img {
+  width: 2rem;
+}
+
+.copy {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    padding: 2rem 1rem;
+  }
+
+  header ul {
+    padding: 0;
+    justify-content: space-between;
+  }
+
+  header ul li {
+    margin: 0 0.5rem;
+  }
+
+  header ul li a {
+    font-size: 10px;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .about .container .right {
+    margin: 0 auto;
+  }
+
+  .about .container .right .image::after {
+    left: 0;
+  }
+
+  .about .container {
+    flex-wrap: wrap-reverse;
+  }
+
+  .eduction .eduction_container {
+    /* flex-wrap: wrap; */
+    flex-direction: column;
+  }
+
+  .eduction .eduction_container {
+    width: 100%;
+  }
+
+  .eduction_heading {
+    margin: 0 auto;
+  }
+
+  .eduction .eduction_container .eduction_heading::after {
+    width: 100%;
+    left: 0;
+  }
+
+  .achievement_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .achievement_field {
+    flex-wrap: wrap-reverse;
+  }
+
+  .proud {
+    margin: 0.5rem auto;
+    text-align: center;
+  }
+
+  .proud::after {
+    left: 0;
+    height: 240px;
+    width: 100%;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .hobbies {
+    flex-wrap: wrap;
+  }
+
+  .hobbies_image .image {
+    width: 150px;
+  }
+
+  .hobbies_title {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .hobbies_image {
+    margin: 1rem auto;
+  }
+
+  .hobby_info {
+    width: 100%;
+  }
+
+  .contact_container::after {
+    width: 200px;
+  }
+
+  .contact {
+    flex-wrap: wrap;
+  }
+
+  .contact_container::after {
+    width: 100%;
+  }
+
+  .copy {
+    margin: 0.5rem 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  header ul li {
+    margin: 0 0.2rem;
+  }
+
+  .about .container .right .image {
+    width: 300px;
+  }
+
+  .about .container .right .image::after {
+    width: 300px;
+  }
+
+  .achievement_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
